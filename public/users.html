@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menedżer Zadań - Użytkownicy</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="/">Zadania</a>
+            <a href="/users.html">Użytkownicy</a>
+        </nav>
+
+        <h1>Lista Użytkowników</h1>
+        
+        <button class="btn" id="showAddUserFormBtn">Dodaj Nowego Użytkownika</button>
+
+        <div id="addUserModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Nowy Użytkownik</h2>
+                <form id="addUserForm">
+                    <input type="text" name="name" placeholder="Imię i nazwisko" required>
+                    <input type="email" name="email" placeholder="Adres email" required>
+                    <button type="submit" class="btn-success">Zapisz użytkownika</button>
+                </form>
+            </div>
+        </div>
+
+        <div id="usersList" class="items-list">
+            <div class="loading">Ładowanie użytkowników...</div>
+        </div>
+    </div>
+
+    <script src="js/users.js"></script>
+</body>
+</html>

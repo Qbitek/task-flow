@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menedżer Zadań - Zadania</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="/">Zadania</a>
+            <a href="/users.html">Użytkownicy</a>
+        </nav>
+
+        <h1>Lista Zadań</h1>
+        
+        <button class="btn" id="showAddTaskFormBtn">Dodaj Nowe Zadanie</button>
+
+        <div id="addTaskModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Nowe Zadanie</h2>
+                <form id="addTaskForm">
+                    <input type="text" name="title" placeholder="Tytuł zadania" required>
+                    <textarea name="description" placeholder="Opis zadania" rows="3"></textarea>
+                    <select name="user_id" required>
+                        <option value="">Wybierz użytkownika</option>
+                    </select>
+                    <button type="submit" class="btn-success">Zapisz zadanie</button>
+                </form>
+            </div>
+        </div>
+
+        <div id="tasksList" class="items-list">
+            <div class="loading">Ładowanie zadań...</div>
+        </div>
+    </div>
+
+    <script src="js/tasks.js"></script>
+</body>
+</html>
