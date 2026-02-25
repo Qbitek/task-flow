@@ -121,7 +121,6 @@ DELETE /api/tasks/:id - Usuwa zadanie
 GET /api/users - Pobiera wszystkich użytkowników
 GET /api/users/:id - Pobiera konkretnego użytkownika z jego zadaniami
 POST /api/users - Dodaje nowego użytkownika
-PUT /api/users/:id - Aktualizuje dane użytkownika
 DELETE /api/users/:id - Usuwa użytkownika
 
 ## Dane testowe
@@ -155,7 +154,7 @@ Formularze do dodawania danych
 Wyświetlanie danych z bazy
 Responsywny design
 Backend: Node.js + Express
-API RESTful (GET, POST, PATCH, DELETE, PUT)
+API RESTful (GET, POST, PATCH, DELETE)
 Baza danych MySQL z relacją (users → tasks)
 Walidacja danych wejściowych
 Obsługa błędów (try-catch, middleware)
